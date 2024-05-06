@@ -1,0 +1,20 @@
+Даны натуральные числа x1, y1, ..., xn, yn. Числа xi, yi
+рассматриваются как координаты i-й точки (i = 1, ..., n). Обозначим
+через rij расстояние от i-й точки до j-й. Получить на экране заданные
+точки и соединить отрезком i-ю точку с j-й в том случае, если
+выполняется по крайней мере одно условие:
+    а) rij имеет наибольшее значение из ri1, ri2, ..., rin;
+    б) rji имеет наибольшее значение из rj1, rj2, ..., rjn.
+
+вводить в файл данные : 1,1;2,2;3,3
+                        1 3
+
+необходима установленная библиотека sfml
+
+input console:
+        linux g++ -c main.cpp && g++ main.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system
+
+        windows g++ -c main.cpp get_my_num.cpp get_coord_points.cpp is_print.cpp get_two_point.cpp input_user_path.cpp get_coord_points_file.cpp -I"C:\dev\SFML-2.6.1\include" 
+                && 
+                g++ main.o get_my_num.o get_coord_points.o is_print.o get_two_point.o input_user_path.o get_coord_points_file.o -o sfml-app -L"C:\dev\SFML-2.6.1\lib" -lsfml-graphics -lsfml-window -lsfml-system
+        
